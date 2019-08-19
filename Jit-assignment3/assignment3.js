@@ -1,3 +1,5 @@
+
+
 var pswInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -63,20 +65,22 @@ $('#psw, #cpsw').on('keyup', function () {
       $('#message').html("Passwrod Not Matched").css('color', 'red');
   });
 
- var p1 = document.getElementById("unam");
+ 
+    var p1 = document.getElementById("unam");
     var a1 = document.getElementById("upassword");
-  function checkLocal(){
+    function checkLocal(){
 
-   
     var localid = localStorage.getItem("userid");
     var localp = localStorage.getItem("pass1");
-   
+ 
+    
+     if(p1.value == localid && a1.value == localp){
+        document.write("Welcome" + " " + localid);
+     }else{
+         alert("Please check credential, Try again");
+     }
+     
 
-    if(p1.value != localid && a1.value != localp){
-        alert("Please check credentials");
-    }else{
-        alert("Your are logged in");
-    }
   }
 
   var first = document.getElementById("fname");
@@ -98,9 +102,5 @@ $('#psw, #cpsw').on('keyup', function () {
     
 
   }
-
- 
-    
-
 
   
