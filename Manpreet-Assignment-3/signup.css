@@ -1,0 +1,28 @@
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    width: 20%;
+}
+    /* li
+     {
+        float: left;
+    } */
+
+    li a {
+        display: block;
+        color: peachpuff;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+    background-color: #111;
+}
