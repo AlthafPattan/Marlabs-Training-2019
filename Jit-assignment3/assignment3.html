@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Assignment 3</title>
+			<link rel="stylesheet" type="text/css" href="assignment3.css">
+			<link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	</head>
+
+	<body>
+	<!-- navbar code -->
+<nav class="navbar navbar-default">
+  	<div class="container">
+    	<div class="navbar-header">
+     		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+       	 		<span class="sr-only">Toggle navigation</span>
+       	 		<span class="icon-bar"></span>
+         		<span class="icon-bar"></span>
+         		<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="#"> Marlabs,Inc</a>
+    	</div>
+
+    <!-- Collect the nav links, forms, and other content for toggling Left elements-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      	<ul class="nav navbar-nav">
+        		<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        		<li><a href="#">About</a></li>
+        		<li><a href="#">Contact</a></li>
+        		<li><img src="logo.jpg" width="150px" height="50px" style="margin-left: 120px"></li>
+      	</ul>
+
+    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+			<!-- Navbar code ends -->
+<ul class="container">
+   <ul class="row">
+	 	<ul class="col-lg-12"></ul>
+        			<div id="cont">
+        				<h1>Welcome to Marlabs</h1>
+		   				<hr>
+	    			</div>
+  		</ul>
+	</ul>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+       			<form id="logform" action="#">
+ 			 
+ 			 		<tr>
+    					<td><label for="uname"><b>Username :</b></label></td>
+    					<td><input type="text" placeholder="Enter Username" name="uname" id="unam" required></td>
+    				</tr>
+    			<br>
+    				<tr>
+    					<td><label for="psw"><b>Password :</b></label></td>
+						<td><input type="password" placeholder="Enter Password"  name="psw" id="upassword" required></td>
+    				</tr>
+				<br>
+				<br>
+    				
+    					<button class="btn btn-success" type="submit" onclick="checkLocal()">Login</button>
+    			</span>
+    				<span style="text-align: right" >
+    						<label style="color: white">
+    							<input type="checkbox" checked="checked" name="remember" > Remember me
+    						</label>
+					</span> 
+						  
+				</form>
+			</div>
+	
+			<div class="col-md-6">
+       			<form id="signform" action="#">
+ 				 	<table>
+ 				 		<tr>
+ 				 			<td><label for="fname"><b>First Name :</b></label></td>
+    						<td><input type="text" placeholder="First Name" name="fname" id="fname" required></td>
+    					</tr>
+    					<tr>
+    						<td><label for="lname"><b>Last Name :</b></label></td>
+    						<td><input type="text" placeholder="Last Name" name="lname" id="lname" required></td>
+    					</tr>
+						<tr>
+							<td><label for="uname"><b> Username:</b></label></td>
+							<td><input type="text" placeholder="UserName" name="uname" id="uname" required></td>
+						</tr>
+						<tr>
+							<td><label for="email"><b>Email:</b></label></td>
+							<td><input type="email" placeholder="Email" name="ema" id="ema" required></td>
+						</tr>
+						<tr>
+							<td><label for="psw"><b>Password:</b></label></td>
+							<td><input type="password" placeholder="Password" name="psw" id="psw"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}" required
+								title="Password must contain a digit, 1 smallcase, 1 upperCase and should be between 8-32 Character"></td>
+						</tr>
+						<tr>
+							<td><label for="cpsw"><b>Confirm Password: </b></label></td>
+							<td><input type="password" placeholder="Confirm" name="cpsw" id="cpsw" required><span id="message"></span></td>
+						</tr>
+						<tr>
+							<td><label for="psw"><b>Gender:</b></label></td>
+							<td>
+								<select name="Gender" id="mygen">
+									<option name="mgen"value="Male" >Male</option>
+									<option name="mgen" value="Female" >Female</option>
+								</select>
+							</td>
+						</tr>		
+    				</table>
+					<br>
+					<p>	
+						<input type="checkbox"  name="agreement" required>
+						<label for="psw"><b>Agreement,I agree and understand the terms</b></label>	
+					</p>	
+					
+					<button id= "btnsub" class="btn btn-success" type="submit" value="infouser" onclick="storeLocal()">Submit</button>
+					<span>
+						<button class="btn btn-warning" type="submit">Cancel</button>
+					</span>
+					<div id="msg">
+							<h3>Password must contain the following:</h3>
+							<p id="letter" class="invalid">A <b>:Lowercase</b> letter</p>
+							<p id="capital" class="invalid">A <b>Uppercase</b> letter</p>
+							<p id="number" class="invalid">A <b>Number</b></p>
+							<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+					</div>
+					  
+				</form>
+				
+			</div>
+		</div> 
+    </div>
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="assignment3.js"></script>
+</body>
+</html>
