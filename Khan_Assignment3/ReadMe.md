@@ -55,5 +55,13 @@ Check the following figure.
 
 ![About](https://github.com/Khanif3693/JavaScript-/blob/master/Assignment_3/About_Assignment3.PNG)
 
+Finally, Added an object to store the username and passwords and after successfully login it will return the "Successfully logged in message" instead of SignIn page. 
+
+TODO: 
+1. Need to save the passowrd in hash format.
+2. Need to store all the form details.
+3. Trying to make it  secure by not validating form until it is complete (Currently it is taking input even if we do not have form filled).\
+
+
 
 
