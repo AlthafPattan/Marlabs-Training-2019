@@ -60,7 +60,7 @@ Finally, Added an object to store the username and passwords and after successfu
 # TODO #
 1. Need to save the passowrd in hash format.
 2. Need to store all the form details.
-3. Trying to make it  secure by not validating form until it is complete (Currently it is taking input even if we do not have form filled).\
+3. Trying to make it  secure by not validating form until it is complete (Currently it is taking input even if we do not have form filled).
 
 
 
