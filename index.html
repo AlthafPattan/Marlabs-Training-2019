@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="script.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Welcome to Marlabs</h2>
+  <p>Make life better and Simpler</p>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#signIn">SignIn</a></li>
+    <li><a data-toggle="pill" href="#signUp">SignUp</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="signIn" class="tab-pane fade">
+      <div class="container">
+        <!-- <h2>Stacked form</h2> -->
+        <form>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+          </div>
+          <!-- <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+          </div> -->
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+    <div id="signUp" class="tab-pane fade">
+      <h3>Sign Up</h3>
+      <form>
+      <div class="form-group">
+        <label for="fname">First Name:</label>
+        <input type="text" class="form-control" id="fname" placeholder="Enter FirstName" name="fname" required>
+        <!-- <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div> -->
+      </div>
+    <div class="form-group">
+      <label for="lname">Last Name:</label>
+      <input type="text" class="form-control" id="lname" placeholder="Enter LastName" name="lname" required>
+      <!-- <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div> -->
+    </div>
+    <div class="form-group">
+      <label for="UserId">User Id:</label>
+        <input type="text" class="form-control" id="UserId" placeholder="Enter Id" name="UserId" required>
+        <!-- <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div> -->
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      <!-- <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div> -->
+    </div>
+
+    <!-- <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div> -->
+
+
+
+    <div class="form-group">
+      <label for="psw">Password:</label>
+      <input type="password" name="psw" placeholder="Password" id="txtPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or 32 characters" required/>
+    <input type="password" name="cpsw" placeholder="Confirm Password" id="txtConfirmPassword" onChange="isPasswordMatch();" />
+    <div id="divCheckPassword"></div>
+  </div>
+
+
+    <!-- Confirm password
+
+    gender dropdown -->
+
+    <div class="dropdown">
+   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+     Gender
+     <span class="caret"></span></button>
+     <ul class="dropdown-menu">
+         <li><a href="#">Male</a></li>
+         <li><a href="#">Female</a></li>
+         <li><a href="#">Others</a></li>
+       </ul>
+  </div>
+
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> I agree.
+        <!-- <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div> -->
+      </label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> -->
+    </div>
+  </div>
+</div>
+</body>
+</html>
