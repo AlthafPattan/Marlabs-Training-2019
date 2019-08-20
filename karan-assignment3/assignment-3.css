@@ -1,0 +1,40 @@
+.container{
+    margin-top:3rem;
+    margin-bottom:5rem;
+    padding: 0;
+    display: block;
+}
+.signin{
+    display: inline-block;
+    justify-content:flex-end;
+    width: 40%;
+    margin:2rem;
+    margin-right: 5rem;
+}
+.heading1{
+    margin : 1rem;
+    display: block;
+    justify-content: center;
+}
+.navbar1{
+    width: 100%;
+    margin:2rem;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.horizintal{
+    display: flex;
+}
+
+.navbarimg2{
+ width: 60%;
+ margin: 2rem;
+}
+.signup{
+        display: inline-block;
+        justify-content:flex-end;
+        width: 40%;
+        margin:2rem;
+        margin-right: 5rem;
+}
