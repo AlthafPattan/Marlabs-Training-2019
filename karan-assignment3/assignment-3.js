@@ -1,13 +1,13 @@
 
 /////////////////////////valid details///////////////////////////////////////////////////
 // function validDetail(){
-//     var firstName= document.getElementById('inputFirstname');
-//     var lastName= document.getElementById('inputLastname');
-//     var uniqueID= document.getElementById('userid');
-//     var address=document.getElementById('inputAddress');
-//     var city= document.getElementById('inputCity');
-//     var state= document.getElementById('inputState');
-//     var agree= document.getElementById('gridCheck');
+    // var firstName= document.getElementById('inputFirstname');
+    // var lastName= document.getElementById('inputLastname');
+    // var uniqueID= document.getElementById('userid');
+    // var address=document.getElementById('inputAddress');
+    // var city= document.getElementById('inputCity');
+    // var state= document.getElementById('inputState');
+    // var agree= document.getElementById('gridCheck');
         // if(firstName.value=='')
         // firstName.setCustomValidity("Please enter FirstName");
         // else
@@ -63,4 +63,39 @@ function validPass(){
             document.getElementById("error").innerHTML=" Atleast 1sysmbol, 1UpperCase and 1Lowercase char";
         }
 }
-console.log(localStorage);
+
+function checkValid(){
+var u1=document.getElementById("exampleInputEmail1");
+var p1=document.getElementById("exampleInputPassword1");
+    var localId=localStorage.getItem("email");
+    var localp=localStorage.getItem("password");
+
+    if(u1.value==localId && p1.value==localp){
+        document.write("welcome"+ " "+localId);
+
+    }else{
+        alert("Please check credentials,try again");
+    }
+}
+
+var paswrd1= document.getElementById('passwrd');
+var firstName= document.getElementById('inputFirstname');
+var lastName= document.getElementById('inputLastname');
+var gender= document.getElementById('gridCheck');
+var uniqueID= document.getElementById('userid');
+var address=document.getElementById('inputAddress');
+var city= document.getElementById('inputCity');
+var state= document.getElementById('inputState');
+var email= document.getElementById('inputEmail4');
+
+function storeLocal(){
+   localStorage.setItem("firstname",firstName.value);
+   localStorage.setItem("lastname",lastName.value);
+   localStorage.setItem("email",email.value);
+   localStorage.setItem("uniqueid",uniqueID.value);
+   localStorage.setItem("address",address.value);
+   localStorage.setItem("city",city.value);
+   localStorage.setItem("state",state.value);
+   localStorage.setItem("gender",gender.value);
+   localStorage.setItem("password",paswrd1.value);
+}
