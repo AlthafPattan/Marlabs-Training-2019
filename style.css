@@ -147,4 +147,9 @@ input[type="checkbox"] {
     color: azure;
 }
 
+.sign-in-success {
+    display: none;
+    height: 100%;
+    text-align: center;
+}
 

@@ -40,18 +40,22 @@
 
                         <label class="label control-label">User ID or Email</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" name="mail">
+                            <input type="text" class="form-control" id="mail">
                         </div>
 
                         <label class="label control-label">Password</label>
                         <div class="input-group">
-                            <input type="password" class="form-control" name="password">
+                            <input type="password" class="form-control" id="signInPassword">
                         </div>
 
-                        <a href="#">
+                        <a id="signIn">
                             <div class="btn btn-primary">SIGN IN</div>
                         </a>
                     </form>
+                </div>
+
+                <div class="col-md-5 sign-in-success col-xs-10">
+
                 </div>
 
                 <div class="col-md-2"></div>
@@ -62,28 +66,28 @@
 
                         <label class="label control-label">First Name</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" name="firstName">
+                            <input type="text" class="form-control" id="firstName">
                         </div>
 
                         <label class="label control-label">Last Name</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" name="lastName">
+                            <input type="text" class="form-control" id="lastName">
                         </div>
 
                         <label class="label control-label">User ID</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" name="userId">
+                            <input type="text" class="form-control" id="userId">
                         </div>
 
                         <label class="label control-label">Email</label>
                         <div class="input-group">
-                            <input type="email" class="form-control" name="email">
+                            <input type="email" class="form-control" id="email">
                         </div>
 
                         <label class="label control-label">Password</label>
                         <div class="input-group">
-                            <input type="password" class="form-control" name="password"
-                                aria-describedby="passwordHelpBlock" id="pwdInput">
+                            <input type="password" class="form-control" id="password"
+                                aria-describedby="passwordHelpBlock">
                             <small id="passwordHelpBlock" class="form-text text-muted d-none">
                                 <span class="valid-warn">Your password must be 8-32 characters long, contain at least
                                     one small char, one upper char and one special char.</span>
@@ -92,12 +96,12 @@
 
                         <label class="label control-label">Confirm Password</label>
                         <div class="input-group">
-                            <input type="password" class="form-control" name="confirmPassword">
+                            <input type="password" class="form-control" id="confirmPassword">
                         </div>
 
                         <label class="label control-label">Gender</label>
                         <div class="input-group">
-                            <select class="custom-select">
+                            <select class="custom-select" id="gender">
                                 <option value="male" selected>Male</option>
                                 <option value="female">Female</option>
                             </select>
@@ -110,7 +114,7 @@
                             </div>
                         </div>
 
-                        <a href="#">
+                        <a id="signUp">
                             <div class="btn btn-primary">SIGN UP</div>
                         </a>
                     </form>
@@ -120,6 +124,7 @@
     </div>
 
     <script src="./script.js"></script>
+    <script src="./userClass.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
