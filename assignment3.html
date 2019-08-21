@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="main_menu" class="row">
+        <div class="logo_area col-xs-12">
+            <a href="#"><img src="https://www.marlabs.com/wp-content/uploads/2017/09/marlabs_logo.png" alt=""></a>
+        </div>
+
+        <div class="inner_main_menu col-xs-12">
+            <ul>
+                <li><a href="#">Divergence</a></li>
+                <li><a href="#">Digital</a></li>
+                <li><a href="#">Platforms</a></li>
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">Ecosystem</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row lower">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 sign-in col-xs-10">
+                    <form>
+                        <h1 class="text-center">Sign In</h1>
+
+                        <label class="label control-label">User ID or Email</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="mail">
+                        </div>
+
+                        <label class="label control-label">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="signInPassword">
+                        </div>
+
+                        <a id="signIn">
+                            <div class="btn btn-primary">SIGN IN</div>
+                        </a>
+                    </form>
+                </div>
+
+                <div class="col-md-5 sign-in-success col-xs-10">
+
+                </div>
+
+                <div class="col-md-2"></div>
+
+                <div class="col-md-5 col-xs-10">
+                    <form>
+                        <h1 class="text-center">Sign Up</h1>
+
+                        <label class="label control-label">First Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+
+                        <label class="label control-label">Last Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+
+                        <label class="label control-label">User ID</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="userId">
+                        </div>
+
+                        <label class="label control-label">Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="email">
+                        </div>
+
+                        <label class="label control-label">Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password"
+                                aria-describedby="passwordHelpBlock">
+                            <small id="passwordHelpBlock" class="form-text text-muted d-none">
+                                <span class="valid-warn">Your password must be 8-32 characters long, contain at least
+                                    one small char, one upper char and one special char.</span>
+                            </small>
+                        </div>
+
+                        <label class="label control-label">Confirm Password</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="confirmPassword">
+                        </div>
+
+                        <label class="label control-label">Gender</label>
+                        <div class="input-group">
+                            <select class="custom-select" id="gender">
+                                <option value="male" selected>Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="checkbox">&nbsp;<small><span class="agreement">I agree and understand the
+                                        terms.</span></small>
+                            </div>
+                        </div>
+
+                        <a id="signUp">
+                            <div class="btn btn-primary">SIGN UP</div>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./userClass.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
