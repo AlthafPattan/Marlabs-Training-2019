@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#main_menu {
+    width: 100%;
+    position: relative;
+}
+
+.logo_area {
+    margin-top: 10px;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    content: "";
+    margin-left: -120px;
+}
+
+.inner_main_menu {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.inner_main_menu ul {
+    margin: 0;
+    padding: 6px 0 0;
+    list-style: none;
+    text-align: right;
+}
+
+.inner_main_menu ul li {
+    float: none;
+    display: inline-block;
+}
+
+.inner_main_menu ul li:nth-child(1) {
+    float: left;
+}
+
+.inner_main_menu ul li:nth-child(2) {
+    float: left;
+}
+
+.inner_main_menu ul li:nth-child(3) {
+    float: left;
+}
+
+.inner_main_menu ul li a {
+    color: #262626;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.inner_main_menu ul li a:hover {
+    color: aqua;
+}
+
+.lower {
+    background-image: url(./home-marlabs.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    color: azure;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.col-md-5 {
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 40px;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: normal;
+    color: azure;
+}
+
+.input-group {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.input_group-addon {
+    background: transparent;
+    border-radius: 0px;
+    border: 0;
+    border-bottom: 1px solid azure;
+    font-size: 18px;
+    color: azure;
+}
+
+.form-control {
+    background: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid azure;
+    padding: 13px;
+    color: azure;
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+    color: azure;
+}
+
+.btn-primary {
+    border-radius: 0;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: azure;
+    color: #708090;
+    border-color: azure;
+}
+
+.sign-in {
+    height: 100%;
+}
+
+.valid-warn {
+    color: #FF4500;
+}
+
+input[type="checkbox"] {
+    height: 14px;
+    width: 14px;
+}
+
+.agreement {
+    font-size: 14px;
+    color: azure;
+}
+
+
