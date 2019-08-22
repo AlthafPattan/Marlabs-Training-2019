@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel ="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/script.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sign-up">Sign Up</a></li>
+                </ul>
+                <a class="navbar-brand" href="#"><img src="https://www.marlabs.com/wp-content/uploads/2017/09/marlabs_logo.png" /></a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#sign-in">Sign In</a></li>
+                </ul>
+            </div>
+            </nav>
+        
+        <div class = "jumbotron text-center">
+        <form name="basic form" action="" onsubmit="return validator()">
+            <label for="firstname">First Name</label>
+             <input type="text" placeholder="firstName" name="firstname"> <br>
+            <label for="firstname">Last Name</label> 
+            <input type="text" placeholder="lastName" name="lastName"> <br>
+            <label for="firstname">User Id</label> 
+            <input type="text" placeholder="username" name="userName"> <br>
+            <label for="firstname">Enter Email</label> 
+            <input type="text" placeholder="email" name="email"> <br>
+            <label for="firstname">Enter Password</label>
+            <input type="text" placeholder="" name="pwd"> <br>
+            <label for="firstname">Confirm Password</label> 
+            <input type="text" placeholder="" name="confirm-pwd"> <br>
+            <label for="firstname">Gender</label> 
+            <select>
+                    <option> Male</option>
+                    <option> Female</option>
+                    </select> <br>
+            <input type="checkbox">Check the box to agree to all the terms and conditions <br>
+            <button type="submit">Click To Submit </button>
+        </form>
+        </div>
+    </body>
+</html>

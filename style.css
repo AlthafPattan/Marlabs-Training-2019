@@ -1,0 +1,15 @@
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 45%;
+    top: 0;
+    text-align: center;
+    margin: auto;
+    padding:0px;
+}
+
+.jumbotron{
+    margin: 0 50px;
+    border: 100px solid blanchedalmond;
+}
